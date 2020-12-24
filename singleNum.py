@@ -15,10 +15,16 @@ print(singleNum([1,2,2,1,3]))
                 
 # Basic dict answer ----------------------------------------------------
 
+def uniqueNum(nums):
+    res = 0
+    for num in nums:
+        res ^= num
+    
+    return res
 
 
+print(uniqueNum([1,2,2,1,3]))
 
-#                   [4,1,2,1,2]
-# sorted            [1,1,2,2,4]
-# start ------------>  *
-# end -------------------->*
+# Better solution with linear runtime complexity ----------------------------------------
+# bitwise XOR operator solves it
+# anything times itself is 0 but if it only occurs once it will come out as 1
