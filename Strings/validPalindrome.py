@@ -16,7 +16,7 @@ def isPalindrome(s):
                 return False
             i += 1
             j -= 1
-    return True
+    return True 
             
 
 print(isPalindrome(s))
